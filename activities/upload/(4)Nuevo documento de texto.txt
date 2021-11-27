@@ -1,0 +1,17 @@
+-Tipo de visita (Mantenimiento, Instalacion).
+-Ultima fecha de visita.
+-Subir mas de un archivo de hoja de visita.
+-Control de reprogramacion de visita. cambiar de status
+-Alertas de seguimiento para clientes que no confirman la visita y clientes proximos a la visita.
+-Estatus con codigo de colores.
+-Calificacion de cliente.
+
+
+                 <?php
+                  $sql= "select tipoEvento, color, descripcion from tipoEvento";
+                  require_once("conexion.php");
+                  $resultado = odbc_exec($conexion, $sql); 
+                  while ($field = odbc_fetch_object($resultado)){
+                    echo '<option style="'.$field->color.'" value="'.$field->tipoEvento.'">&#9724; '.$field->descripcion.'</option>';
+                  }
+          	?>
