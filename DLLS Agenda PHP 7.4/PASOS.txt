@@ -1,0 +1,21 @@
+******* LEEME *******
+1. se agregan las dlls que estan en la carpeta dlls siguiendo los siguientes pasos:
+	-Se ingresa a xamp del disco local C
+	-Luego se busca la carpeta php
+	-Luego se ingresa a la carpeta ext donde estarán todas las dll entonces se pegan las dll le la primera 	carpeta mencionada (donde se encuentran las dll)
+	- Luego de pegar las dll se ingresa al control panel que si no les aparece como acceso directo pueden ir a 	la carpeta de xamp y pueden encontrar el ejecutable 	con nombre xampp-control
+	-Luego teniendo abierto el panel se busca la fila de las opciones de apache y nos vamos al boton que dice 	config
+	- Se desplegara una lista de opciones y nos vamos a la que dice PHP (php.ini)
+	- Luego buscamos en el bloc de notas un apartado donde se encuentran varias filas con extensiones como por 	ejemplos así
+		;extension=pdo_oci
+		;extension=pdo_odbc
+		;extension=pdo_pgsql
+		extension=pdo_sqlite
+		;extension=pgsql
+		;extension=shmop
+
+	-Entonces luego de encontrar el apartado donde estan esas extensiones se agregan las extensiones que estan en la caperta
+	-Le damos guardar y por ultimo activamos el apache y tiene que funcionar sino lo vuelven a apagar y prueban encendiendolo de nuevo
+
+
+NOTA: Si al iniciar los servicios da error, verificar si el puerto esta en uso. Por lo general el servicio de publicaciones de World Wide Web esta asignado a este. Proceder a detener.
